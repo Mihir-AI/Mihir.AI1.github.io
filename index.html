@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mihir Digavalli | Master's Data & Knowledge Engineering</title>
+  <title>Mihir Digavalli | Data & AI Portfolio</title>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +27,8 @@
       --container-width: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -45,15 +38,8 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
     .container {
       width: 100%;
@@ -79,49 +65,22 @@
       padding: 0.85rem 0;
     }
 
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
+    .nav-left { display: flex; align-items: center; gap: 0.75rem; }
 
     .logo-circle {
-      width: 38px;
-      height: 38px;
-      border-radius: 999px;
+      width: 38px; height: 38px; border-radius: 999px;
       border: 2px solid rgba(79, 70, 229, 0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       background: radial-gradient(circle at 30% 0, #4f46e5, #020617 65%);
       box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8);
-      font-weight: 700;
-      font-size: 0.95rem;
+      font-weight: 700; font-size: 0.95rem;
     }
 
-    .nav-title {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-    }
+    .nav-title { display: flex; flex-direction: column; gap: 0.1rem; }
+    .nav-title-main { font-weight: 600; letter-spacing: 0.03em; font-size: 0.98rem; }
+    .nav-title-sub { font-size: 0.8rem; color: var(--text-muted); }
 
-    .nav-title-main {
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      font-size: 0.98rem;
-    }
-
-    .nav-title-sub {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      font-size: 0.9rem;
-    }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; font-size: 0.9rem; }
 
     .nav-links a {
       position: relative;
@@ -140,13 +99,8 @@
       transition: width 0.18s ease;
     }
 
-    .nav-links a:hover {
-      color: var(--text-main);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover { color: var(--text-main); }
+    .nav-links a:hover::after { width: 100%; }
 
     .nav-cta {
       padding: 0.45rem 0.9rem;
@@ -163,9 +117,7 @@
       box-shadow: var(--shadow-subtle);
     }
 
-    .nav-cta span.icon {
-      font-size: 1rem;
-    }
+    .nav-cta span.icon { font-size: 1rem; }
 
     .nav-cta:hover {
       background: radial-gradient(circle at 100% 0, rgba(244, 114, 182, 0.26), transparent 58%);
@@ -190,22 +142,12 @@
       font-size: 0.92rem;
     }
 
-    .nav-links-mobile a {
-      color: var(--text-muted);
-    }
-
-    .nav-links-mobile a:hover {
-      color: var(--text-main);
-    }
-
-    .nav-links-mobile.open {
-      display: flex;
-    }
+    .nav-links-mobile a { color: var(--text-muted); }
+    .nav-links-mobile a:hover { color: var(--text-main); }
+    .nav-links-mobile.open { display: flex; }
 
     /* ===== Hero ===== */
-    .hero {
-      padding: 3.75rem 0 3.25rem;
-    }
+    .hero { padding: 3.75rem 0 3.25rem; }
 
     .hero-inner {
       display: grid;
@@ -228,9 +170,7 @@
     }
 
     .hero-tag-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
+      width: 7px; height: 7px; border-radius: 999px;
       background: #22c55e;
       box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
     }
@@ -255,12 +195,7 @@
       margin-bottom: 1.5rem;
     }
 
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      margin-bottom: 1.7rem;
-    }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-bottom: 1.7rem; }
 
     .meta-pill {
       padding: 0.3rem 0.8rem;
@@ -271,15 +206,9 @@
       background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95));
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center; }
 
-    .btn-primary,
-    .btn-ghost {
+    .btn-primary, .btn-ghost {
       border-radius: 999px;
       padding: 0.6rem 1.3rem;
       font-size: 0.9rem;
@@ -298,10 +227,7 @@
       box-shadow: 0 18px 40px rgba(79, 70, 229, 0.55);
     }
 
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 22px 55px rgba(79, 70, 229, 0.7);
-    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 22px 55px rgba(79, 70, 229, 0.7); }
 
     .btn-ghost {
       background: transparent;
@@ -315,23 +241,11 @@
       color: var(--text-main);
     }
 
-    .btn-primary span.icon,
-    .btn-ghost span.icon {
-      font-size: 1.05rem;
-    }
+    .btn-primary span.icon, .btn-ghost span.icon { font-size: 1.05rem; }
 
-    .hero-secondary-text {
-      margin-top: 0.8rem;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
+    .hero-secondary-text { margin-top: 0.8rem; font-size: 0.82rem; color: var(--text-muted); }
+    .hero-secondary-text span { color: #e5e7eb; font-weight: 500; }
 
-    .hero-secondary-text span {
-      color: #e5e7eb;
-      font-weight: 500;
-    }
-
-    /* Hero right card */
     .hero-card {
       border-radius: var(--radius-xl);
       border: 1px solid rgba(55, 65, 81, 0.9);
@@ -351,48 +265,22 @@
       pointer-events: none;
     }
 
-    .hero-avatar {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-      position: relative;
-      z-index: 1;
-    }
+    .hero-avatar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; position: relative; z-index: 1; }
 
     .avatar-circle {
-      width: 46px;
-      height: 46px;
-      border-radius: 999px;
+      width: 46px; height: 46px; border-radius: 999px;
       background: radial-gradient(circle at 30% 0, #22d3ee, #4f46e5 55%, #020617 90%);
       border: 2px solid rgba(15, 23, 42, 0.88);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.15rem;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.15rem;
       color: #e5e7eb;
       box-shadow: 0 14px 35px rgba(15, 23, 42, 0.95);
     }
 
-    .avatar-meta-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-    }
+    .avatar-meta-title { font-size: 0.95rem; font-weight: 500; }
+    .avatar-meta-sub { font-size: 0.8rem; color: var(--text-muted); }
 
-    .avatar-meta-sub {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .hero-tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.1rem;
-      position: relative;
-      z-index: 1;
-    }
+    .hero-tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem; position: relative; z-index: 1; }
 
     .tech-chip {
       padding: 0.25rem 0.6rem;
@@ -404,8 +292,7 @@
     }
 
     .hero-highlight-card {
-      position: relative;
-      z-index: 1;
+      position: relative; z-index: 1;
       border-radius: 1.1rem;
       padding: 0.8rem 0.85rem;
       background: rgba(15, 23, 42, 0.98);
@@ -414,17 +301,8 @@
       margin-bottom: 0.8rem;
     }
 
-    .hero-highlight-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.35rem;
-    }
-
-    .hero-highlight-title {
-      font-size: 0.86rem;
-      font-weight: 500;
-    }
+    .hero-highlight-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem; }
+    .hero-highlight-title { font-size: 0.86rem; font-weight: 500; }
 
     .hero-highlight-badge {
       padding: 0.1rem 0.55rem;
@@ -435,38 +313,19 @@
       color: #bbf7d0;
     }
 
-    .hero-highlight-body {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+    .hero-highlight-body { font-size: 0.8rem; color: var(--text-muted); }
 
-    .hero-stats {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin-top: 0.2rem;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
+    .hero-stats { display: flex; justify-content: space-between; gap: 0.5rem; margin-top: 0.2rem; font-size: 0.75rem; color: var(--text-muted); }
+    .hero-stat-label { color: #e5e7eb; font-weight: 500; font-size: 0.78rem; }
 
-    .hero-stat-label {
-      color: #e5e7eb;
-      font-weight: 500;
-      font-size: 0.78rem;
-    }
-
-    /* ===== Sections + scroll animation ===== */
+    /* ===== Sections ===== */
     section {
       padding: 2.5rem 0 0;
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    section.visible { opacity: 1; transform: translateY(0); }
 
     .section-header {
       display: flex;
@@ -476,16 +335,8 @@
       margin-bottom: 1.2rem;
     }
 
-    .section-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-
-    .section-subtitle {
-      font-size: 0.83rem;
-      color: var(--text-muted);
-      max-width: 460px;
-    }
+    .section-title { font-size: 1.2rem; font-weight: 600; }
+    .section-subtitle { font-size: 0.83rem; color: var(--text-muted); max-width: 520px; }
 
     /* ===== About ===== */
     .about-grid {
@@ -519,21 +370,11 @@
       font-size: 0.85rem;
     }
 
-    .about-list-label {
-      color: var(--text-muted);
-    }
-
-    .about-list-value {
-      font-weight: 500;
-      text-align: right;
-    }
+    .about-list-label { color: var(--text-muted); }
+    .about-list-value { font-weight: 500; text-align: right; }
 
     /* ===== Skills ===== */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 1rem;
-    }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; }
 
     .skill-card {
       border-radius: var(--radius-lg);
@@ -543,17 +384,9 @@
       box-shadow: var(--shadow-subtle);
     }
 
-    .skill-card-title {
-      font-size: 0.88rem;
-      margin-bottom: 0.35rem;
-      font-weight: 500;
-    }
+    .skill-card-title { font-size: 0.88rem; margin-bottom: 0.35rem; font-weight: 500; }
 
-    .skill-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
+    .skill-chip-row { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 
     .skill-chip {
       font-size: 0.78rem;
@@ -565,13 +398,7 @@
     }
 
     /* ===== Projects ===== */
-    .projects-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.1rem;
-      font-size: 0.8rem;
-    }
+    .projects-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem; font-size: 0.8rem; }
 
     .filter-pill {
       padding: 0.25rem 0.8rem;
@@ -580,6 +407,7 @@
       background: rgba(15, 23, 42, 0.96);
       cursor: pointer;
       color: var(--text-muted);
+      user-select: none;
     }
 
     .filter-pill.active {
@@ -588,51 +416,33 @@
       border-color: rgba(79, 70, 229, 0.9);
     }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.2rem;
-    }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
 
     .project-card {
       border-radius: var(--radius-lg);
       background: var(--bg-elevated);
       border: 1px solid rgba(55, 65, 81, 0.9);
       box-shadow: var(--shadow-subtle);
-      padding: 0.85rem;
+      padding: 0.95rem;
       display: flex;
       flex-direction: column;
-      min-height: 190px;
+      min-height: 205px;
       position: relative;
       overflow: hidden;
+      transition: transform 0.12s ease, box-shadow 0.18s ease, border-color 0.18s ease;
     }
 
-    .project-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 0.35rem;
+    .project-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(148, 163, 184, 0.9);
+      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.75);
     }
 
-    .project-title {
-      font-size: 1rem;
-      font-weight: 500;
-      margin-bottom: 0.35rem;
-    }
+    .project-label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.35rem; }
+    .project-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+    .project-description { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.55rem; flex-grow: 1; }
 
-    .project-description {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      margin-bottom: 0.45rem;
-      flex-grow: 1;
-    }
-
-    .project-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      font-size: 0.75rem;
-      margin-bottom: 0.55rem;
-    }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; font-size: 0.75rem; margin-bottom: 0.55rem; }
 
     .project-tag {
       padding: 0.15rem 0.55rem;
@@ -642,19 +452,9 @@
       color: var(--text-muted);
     }
 
-    .project-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      font-size: 0.77rem;
-      color: var(--text-muted);
-    }
+    .project-meta { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; font-size: 0.77rem; color: var(--text-muted); }
 
-    .project-links {
-      display: flex;
-      gap: 0.4rem;
-    }
+    .project-links { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
     .project-link {
       display: inline-flex;
@@ -666,21 +466,13 @@
       font-size: 0.76rem;
       cursor: pointer;
       background: rgba(15, 23, 42, 0.96);
+      transition: background 0.15s ease, color 0.15s ease;
     }
 
-    .project-link:hover {
-      background: rgba(15, 23, 42, 1);
-      color: #e5e7eb;
-    }
+    .project-link:hover { background: rgba(15, 23, 42, 1); color: #e5e7eb; }
 
     /* ===== Experience ===== */
-    .timeline {
-      border-radius: var(--radius-lg);
-      background: var(--bg-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 1rem;
-      box-shadow: var(--shadow-subtle);
-    }
+    .timeline { border-radius: var(--radius-lg); background: var(--bg-elevated); border: 1px solid var(--border-subtle); padding: 1rem; box-shadow: var(--shadow-subtle); }
 
     .timeline-item {
       display: grid;
@@ -690,40 +482,16 @@
       border-bottom: 1px solid rgba(31, 41, 55, 0.7);
     }
 
-    .timeline-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .timeline-role {
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .timeline-company {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-
-    .timeline-meta {
-      font-size: 0.79rem;
-      color: var(--text-muted);
-    }
-
-    .timeline-description {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+    .timeline-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .timeline-role { font-size: 0.9rem; font-weight: 600; }
+    .timeline-company { font-size: 0.82rem; color: var(--text-muted); }
+    .timeline-meta { font-size: 0.79rem; color: var(--text-muted); }
+    .timeline-description { font-size: 0.82rem; color: var(--text-muted); }
 
     /* ===== Contact ===== */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.6fr);
-      gap: 1.5rem;
-    }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.6fr); gap: 1.5rem; }
 
-    .contact-card,
-    .contact-side {
+    .contact-card, .contact-side {
       border-radius: var(--radius-lg);
       background: var(--bg-elevated);
       border: 1px solid var(--border-subtle);
@@ -732,30 +500,11 @@
       font-size: 0.87rem;
     }
 
-    .contact-line {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin-bottom: 0.45rem;
-    }
+    .contact-line { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.45rem; }
+    .contact-label { color: var(--text-muted); }
+    .contact-value { font-weight: 500; word-break: break-all; text-align: right; }
 
-    .contact-label {
-      color: var(--text-muted);
-    }
-
-    .contact-value {
-      font-weight: 500;
-      word-break: break-all;
-      text-align: right;
-    }
-
-    .social-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.4rem;
-    }
+    .social-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.4rem; }
 
     .social-pill {
       padding: 0.25rem 0.7rem;
@@ -767,92 +516,44 @@
       color: var(--text-muted);
     }
 
-    .social-pill:hover {
-      background: rgba(15, 23, 42, 1);
-      color: #e5e7eb;
-    }
+    .social-pill:hover { background: rgba(15, 23, 42, 1); color: #e5e7eb; }
 
     /* ===== Footer ===== */
-    .site-footer {
-      padding: 1.8rem 0 2rem;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    .site-footer span {
-      color: #e5e7eb;
-    }
+    .site-footer { padding: 1.8rem 0 2rem; font-size: 0.78rem; color: var(--text-muted); text-align: center; }
+    .site-footer span { color: #e5e7eb; }
 
     /* ===== Responsive ===== */
     @media (max-width: 900px) {
-      .hero-inner {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .hero {
-        padding-top: 2.4rem;
-      }
-
-      .about-grid,
-      .contact-grid,
-      .timeline-item {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .hero-inner { grid-template-columns: minmax(0, 1fr); }
+      .hero { padding-top: 2.4rem; }
+      .about-grid, .contact-grid, .timeline-item { grid-template-columns: minmax(0, 1fr); }
+      .section-header { flex-direction: column; align-items: flex-start; }
     }
 
     @media (max-width: 720px) {
-      .nav-links {
-        display: none;
-      }
-
-      .nav-toggle {
-        display: block;
-      }
-
-      .hero-title {
-        font-size: 2.1rem;
-      }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .hero-title { font-size: 2.1rem; }
     }
 
     @media (max-width: 480px) {
-      .hero-card {
-        margin-top: 1rem;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn-primary,
-      .btn-ghost {
-        width: 100%;
-        justify-content: center;
-      }
+      .hero-card { margin-top: 1rem; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
     }
   </style>
 </head>
-<body>
 
+<body>
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container">
       <nav class="nav">
         <div class="nav-left">
-          <div class="logo-circle">
-            MD
-          </div>
+          <div class="logo-circle">MD</div>
           <div class="nav-title">
             <div class="nav-title-main">Mihir Digavalli</div>
-            <div class="nav-title-sub">
-           Master's Data & Knowledge Engineering 
-            </div>
+            <div class="nav-title-sub">Master’s Data & Knowledge Engineering</div>
           </div>
         </div>
 
@@ -868,9 +569,7 @@
           </a>
         </div>
 
-        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMobileNav()">
-          ☰
-        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMobileNav()">☰</button>
       </nav>
 
       <div id="mobileNav" class="nav-links-mobile">
@@ -892,24 +591,26 @@
           <div>
             <div class="hero-tag">
               <span class="hero-tag-dot"></span>
-              <span>Actively looking for data, ML & software roles</span>
+              <span>Actively looking for Data / ML / AI roles</span>
             </div>
+
             <h1 class="hero-title">
-              Hi, I'm <span class="accent">Mihir Digavalli</span> 👋
+              Hi, I’m <span class="accent">Mihir Digavalli</span> 👋
             </h1>
+
             <p class="hero-subtitle">
               Master’s student in <strong>Data &amp; Knowledge Engineering</strong> at
-              <strong>Otto von Guericke University Magdeburg</strong>, currently based in Berlin. I work across
-              <strong>data engineering, analytics, machine learning, and software development</strong> –
-              from building data pipelines and anomaly detection systems to dashboards and ML models.
+              <strong>Otto von Guericke University Magdeburg</strong>, based in Berlin.
+              I build <strong>data products</strong> and <strong>AI systems</strong> that are reliable, measurable, and
+              easy for teams to use — from pipelines and dashboards to LLM agents.
             </p>
 
             <div class="hero-meta">
               <div class="meta-pill">
-                Open to: Data Engineer · Data Analyst · ML Engineer · Data Scientist · Full Stack · Cloud / AWS roles
+                Focus: Data Engineering · Analytics · Responsible / Human-centered AI
               </div>
               <div class="meta-pill">
-                Hands-on with Python · SQL · Spark · Airflow · Power BI · AWS · Azure · GCP
+                Stack: Python · SQL · Power BI · GCP/AWS · LangChain · OpenAI Agents SDK
               </div>
             </div>
 
@@ -918,11 +619,14 @@
                 <span>View selected projects</span>
                 <span class="icon">↗</span>
               </a>
+              <a href="#contact" class="btn-ghost">
+                <span>Contact</span>
+                <span class="icon">✉️</span>
+              </a>
             </div>
 
             <p class="hero-secondary-text">
-              Currently: <span>Working Student · Data Engineering &amp; Analytics at Sofatutor (Berlin)</span> ·
-              Building: <span>ETL pipelines, anomaly detection, and analytics for product teams</span>
+              Currently: <span>Working Student · Data Engineering &amp; Analytics at Sofatutor (Berlin)</span>
             </p>
           </div>
 
@@ -931,40 +635,38 @@
               <div class="avatar-circle">MD</div>
               <div>
                 <div class="avatar-meta-title">Mihir Digavalli</div>
-                <div class="avatar-meta-sub">Berlin · Data &amp; ML · Cloud</div>
+                <div class="avatar-meta-sub">Berlin · Data &amp; AI · Cloud</div>
               </div>
             </div>
 
             <div class="hero-tech-tags">
               <span class="tech-chip">Python</span>
               <span class="tech-chip">SQL</span>
-              <span class="tech-chip">Spark</span>
-              <span class="tech-chip">Airflow</span>
               <span class="tech-chip">Power BI</span>
+              <span class="tech-chip">BigQuery</span>
               <span class="tech-chip">AWS</span>
-              <span class="tech-chip">Azure</span>
-              <span class="tech-chip">GCP</span>
-              <span class="tech-chip">React</span>
+              <span class="tech-chip">LangChain</span>
+              <span class="tech-chip">OpenAI Agents</span>
+              <span class="tech-chip">Hugging Face</span>
             </div>
 
             <div class="hero-highlight-card">
               <div class="hero-highlight-header">
                 <div class="hero-highlight-title">Recent highlight</div>
-                <div class="hero-highlight-badge">Production-focused</div>
+                <div class="hero-highlight-badge">Impact</div>
               </div>
               <div class="hero-highlight-body">
-                At Sofatutor, I’ve been designing and automating <strong>ETL pipelines</strong>, building
-                <strong>anomaly detection</strong> for KPIs, and supporting product teams with
-                <strong>data-driven insights</strong>.
+                Built <strong>8+ Power BI dashboards</strong> and improved reporting efficiency by
+                <strong>~40%</strong> for product &amp; business teams; also shipping LLM agent demos (Hugging Face).
               </div>
               <div class="hero-stats">
                 <div>
                   <div class="hero-stat-label">3+ yrs</div>
-                  <div>Data &amp; software experience</div>
+                  <div>Data &amp; software</div>
                 </div>
                 <div>
-                  <div class="hero-stat-label">Stack</div>
-                  <div>Python · SQL · Spark · BI</div>
+                  <div class="hero-stat-label">Themes</div>
+                  <div>Reliable · Explainable · Useful</div>
                 </div>
               </div>
             </div>
@@ -979,62 +681,50 @@
         <div class="section-header">
           <h2 class="section-title">About</h2>
           <p class="section-subtitle">
-            A snapshot of my background, what I work on, and the kind of problems I like solving.
+            A recruiter-friendly snapshot: what I do, how I work, and what I’m looking for.
           </p>
         </div>
 
         <div class="about-grid">
           <div class="about-card">
             <p>
-              I’m a <strong>Master’s student in Data &amp; Knowledge Engineering</strong> at
-              <strong>Otto von Guericke University Magdeburg</strong>, with hands-on experience across
-              <strong>data engineering, analytics, and machine learning</strong>.
-              I’ve worked with <strong>large datasets, ETL pipelines, anomaly detection, and predictive analytics</strong>
-              in both product and financial domains.
+              I’m a <strong>Master’s student in Data &amp; Knowledge Engineering</strong> with hands-on experience in
+              <strong>analytics, dashboards, data modeling, and AI workflows</strong>.
+              I enjoy building systems that make teams faster: clean datasets, clear KPIs, and reliable AI tools.
             </p>
             <br />
             <p>
-              Professionally, I’ve contributed as a <strong>Working Student in Data Engineering &amp; Analytics</strong>
-              at Sofatutor (Berlin), a <strong>Data Analyst</strong> at DBS Bank (India), and a
-              <strong>Software Engineer Intern</strong> at ADP, giving me a mix of data, analytics, and
-              software engineering experience.
+              My recent work includes product analytics and reporting at Sofatutor, regulatory and management reporting
+              in finance at DBS, and software engineering foundations at ADP.
             </p>
             <br />
             <p>
-              I enjoy designing <em>clean, reliable, and well-documented</em> data workflows,
-              building dashboards for decision-makers, and experimenting with ML models and AI workflows.
+              I’m especially interested in <strong>human-centered AI</strong> — AI that supports decisions with transparency,
+              limitations, and measurable outcomes.
             </p>
           </div>
 
           <div class="about-card">
             <ul class="about-list">
               <li>
-                <span class="about-list-label">Current status</span>
-                <span class="about-list-value">
-                  M.Sc. Data &amp; Knowledge Engineering, Otto von Guericke University
-                </span>
-              </li>
-              <li>
                 <span class="about-list-label">Location</span>
                 <span class="about-list-value">Berlin, Germany</span>
               </li>
               <li>
-                <span class="about-list-label">Focus areas</span>
-                <span class="about-list-value">Data Eng · Analytics · ML · Full Stack</span>
+                <span class="about-list-label">Primary strengths</span>
+                <span class="about-list-value">Analytics · Data Quality · LLM Agents</span>
               </li>
               <li>
-                <span class="about-list-label">Tech stack</span>
-                <span class="about-list-value">Python, SQL, Spark, Airflow, Power BI, React</span>
-              </li>
-              <li>
-                <span class="about-list-label">Cloud &amp; tools</span>
-                <span class="about-list-value">AWS, Azure, GCP, Kafka, Hive, Jenkins, Git</span>
+                <span class="about-list-label">Tools</span>
+                <span class="about-list-value">Python · SQL · Power BI · BigQuery · AWS</span>
               </li>
               <li>
                 <span class="about-list-label">Open to</span>
-                <span class="about-list-value">
-                  Data Engineer · Data Analyst · ML Engineer · Data Scientist · Full Stack · Cloud / AWS Architect
-                </span>
+                <span class="about-list-value">Data / Analytics / AI roles</span>
+              </li>
+              <li>
+                <span class="about-list-label">Languages</span>
+                <span class="about-list-value">English (C1) · German (B1)</span>
               </li>
             </ul>
           </div>
@@ -1048,73 +738,48 @@
         <div class="section-header">
           <h2 class="section-title">Skills</h2>
           <p class="section-subtitle">
-            Technologies and tools I work with across data engineering, analytics, ML, and development.
+            Tools I’ve used in production and project work (kept concise like a digital CV).
           </p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="skill-card-title">Programming &amp; Querying</div>
+            <div class="skill-card-title">Core</div>
             <div class="skill-chip-row">
               <span class="skill-chip">Python</span>
               <span class="skill-chip">SQL</span>
-              <span class="skill-chip">JavaScript</span>
-              <span class="skill-chip">Node.js</span>
-              <span class="skill-chip">R</span>
+              <span class="skill-chip">Data Modeling</span>
+              <span class="skill-chip">Experimentation</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-title">Data Engineering &amp; Big Data</div>
+            <div class="skill-card-title">Analytics & BI</div>
             <div class="skill-chip-row">
-              <span class="skill-chip">Spark</span>
-              <span class="skill-chip">Hadoop</span>
-              <span class="skill-chip">Apache Hive</span>
-              <span class="skill-chip">Kafka</span>
-              <span class="skill-chip">Airflow</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-title">Cloud &amp; BI</div>
-            <div class="skill-chip-row">
-              <span class="skill-chip">AWS</span>
-              <span class="skill-chip">Azure</span>
-              <span class="skill-chip">GCP</span>
               <span class="skill-chip">Power BI</span>
               <span class="skill-chip">Excel</span>
+              <span class="skill-chip">Amplitude</span>
+              <span class="skill-chip">KPI Design</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-title">Data Science &amp; AI</div>
+            <div class="skill-card-title">Cloud & Data</div>
             <div class="skill-chip-row">
-              <span class="skill-chip">Pandas</span>
-              <span class="skill-chip">NumPy</span>
-              <span class="skill-chip">scikit-learn</span>
-              <span class="skill-chip">PyTorch</span>
-              <span class="skill-chip">TensorFlow</span>
-              <span class="skill-chip">Matplotlib</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-title">Web, Automation &amp; DevOps</div>
-            <div class="skill-chip-row">
-              <span class="skill-chip">React</span>
-              <span class="skill-chip">Docker</span>
-              <span class="skill-chip">Jenkins</span>
+              <span class="skill-chip">GCP (BigQuery)</span>
+              <span class="skill-chip">AWS</span>
               <span class="skill-chip">Git</span>
-              <span class="skill-chip">n8n</span>
-              <span class="skill-chip">LangChain</span>
+              <span class="skill-chip">Jira</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-title">Languages</div>
+            <div class="skill-card-title">AI / LLM</div>
             <div class="skill-chip-row">
-              <span class="skill-chip">English · C1</span>
-              <span class="skill-chip">German · B1</span>
+              <span class="skill-chip">LangChain</span>
+              <span class="skill-chip">OpenAI Agents SDK</span>
+              <span class="skill-chip">Gemini API</span>
+              <span class="skill-chip">scikit-learn</span>
             </div>
           </div>
         </div>
@@ -1127,67 +792,119 @@
         <div class="section-header">
           <h2 class="section-title">Selected Projects</h2>
           <p class="section-subtitle">
-            A few projects that show how I work with data, ML, automation, and analytics.
+            Projects that show how I think: build something real, deploy it, and make it understandable.
           </p>
         </div>
 
+        <!-- Filters (visual only) -->
         <div class="projects-filters">
           <span class="filter-pill active">All</span>
-          <span class="filter-pill">Data Pipelines</span>
-          <span class="filter-pill">ML &amp; AI</span>
-          <span class="filter-pill">Dashboards</span>
+          <span class="filter-pill">LLM Agents</span>
+          <span class="filter-pill">GenAI Analytics</span>
+          <span class="filter-pill">Data / BI</span>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1 -->
+          <!-- NEW: Deep Research Agent -->
+          <article class="project-card">
+            <div class="project-label">LLM Agents · Deployment</div>
+            <h3 class="project-title">Deep Research Agent (OpenAI + Gemini)</h3>
+            <p class="project-description">
+              Built a multi-step research agent that decomposes complex questions, runs structured sub-tasks,
+              and synthesizes results. Integrated <strong>OpenAI</strong> and <strong>Gemini</strong> for cross-model
+              validation and deployed a live demo on Hugging Face.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">OpenAI Agents SDK</span>
+              <span class="project-tag">Gemini API</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Hugging Face</span>
+            </div>
+            <div class="project-meta">
+              <span>Human-centered AI</span>
+              <div class="project-links">
+                <a href="https://huggingface.co/spaces/sooraj190/DeepResearchagent" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>Demo</span> <span>🚀</span>
+                </a>
+                <!-- Optional: add your GitHub repo link -->
+                <!-- <a href="https://github.com/yourname/deep-research-agent" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>Code</span> <span>🐙</span>
+                </a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- NEW: GenAI Stock Portfolio Analysis -->
+          <article class="project-card">
+            <div class="project-label">GenAI · Decision Support</div>
+            <h3 class="project-title">AI-Assisted Stock Portfolio Analysis</h3>
+            <p class="project-description">
+              Created a Generative AI–assisted workflow that combines structured market data with natural-language
+              explanations. Designed prompts to summarize portfolio behavior, highlight risks, and communicate
+              limitations — using AI as <strong>decision support</strong>, not automation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">yfinance</span>
+              <span class="project-tag">LangChain</span>
+              <span class="project-tag">Matplotlib</span>
+            </div>
+            <div class="project-meta">
+              <span>Explainability-first</span>
+              <div class="project-links">
+                <!-- Replace with your repo/notebook link if you have it public -->
+                <!-- <a href="https://github.com/yourname/ai-portfolio-analysis" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>Code</span> <span>🐙</span>
+                </a> -->
+                <a href="#contact" class="project-link">
+                  <span>Ask for walkthrough</span> <span>💬</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Existing (keep or replace) -->
           <article class="project-card">
             <div class="project-label">AI Workflow Automation</div>
-            <h3 class="project-title">AI Workflow Automation using LangChain &amp; FastAPI</h3>
+            <h3 class="project-title">AI Workflow Automation (LangChain + FastAPI)</h3>
             <p class="project-description">
-              Built an AI-powered document analysis pipeline using <strong>Python, LangChain, FastAPI, and OpenAI API</strong>.
-              The system ingests documents, applies NLP and data extraction models, and exposes results via an API for
-              downstream automation and analytics.
+              Built an AI-powered document analysis pipeline using <strong>Python, LangChain, FastAPI</strong>.
+              Ingests documents, extracts structured fields, and exposes results via an API for downstream automation.
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">LangChain</span>
               <span class="project-tag">FastAPI</span>
               <span class="project-tag">Docker</span>
-              <span class="project-tag">OpenAI API</span>
-              <span class="project-tag">Pandas</span>
             </div>
             <div class="project-meta">
-              <span>AI · Automation</span>
+              <span>Automation</span>
               <div class="project-links">
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Code</span> <span>🐙</span>
+                <a href="#contact" class="project-link">
+                  <span>Share code</span> <span>📩</span>
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
           <article class="project-card">
-            <div class="project-label">Computer Vision · ML</div>
-            <h3 class="project-title">Image Classification using Machine Learning (PyTorch)</h3>
+            <div class="project-label">Dashboards · Analytics</div>
+            <h3 class="project-title">KPI Dashboards for Product Teams (Power BI)</h3>
             <p class="project-description">
-              Implemented a convolutional neural network on the <strong>CIFAR-10</strong> dataset using PyTorch.
-              Trained with GPU acceleration, tuned hyperparameters, and applied regularization (dropout, batch
-              normalization) to improve accuracy and generalization.
+              Designed dashboards to track operational and product KPIs with consistent definitions, enabling faster
+              reporting and clearer decision-making across stakeholders.
             </p>
             <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">PyTorch</span>
-              <span class="project-tag">CIFAR-10</span>
-              <span class="project-tag">NumPy</span>
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">BigQuery</span>
+              <span class="project-tag">Data Quality</span>
             </div>
             <div class="project-meta">
-              <span>Deep Learning</span>
+              <span>Metrics</span>
               <div class="project-links">
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Code</span> <span>🐙</span>
+                <a href="#experience" class="project-link">
+                  <span>See impact</span> <span>↗</span>
                 </a>
               </div>
             </div>
@@ -1196,18 +913,17 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION -->
+    <!-- EXPERIENCE -->
     <section id="experience">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Experience &amp; Education</h2>
+          <h2 class="section-title">Experience</h2>
           <p class="section-subtitle">
-            Professional roles and academic background that shaped my data and software skills.
+            Roles that show delivery, stakeholder work, and measurable outcomes.
           </p>
         </div>
 
         <div class="timeline">
-          <!-- Sofatutor -->
           <div class="timeline-item">
             <div>
               <div class="timeline-role">Working Student · Data Engineering &amp; Analytics</div>
@@ -1215,33 +931,24 @@
               <div class="timeline-meta">Nov 2024 – Nov 2025</div>
             </div>
             <div class="timeline-description">
-              • Conducted statistical analysis and built <strong>anomaly-detection logic</strong> to keep KPIs
-              consistent across multiple data sources.<br />
-              • Designed and automated <strong>ETL pipelines</strong> using Python, Airflow, and SQL, improving
-              efficiency and reliability.<br />
-              • Worked with <strong>AWS Redshift</strong> and <strong>Amplitude</strong> dashboards to support
-              product and research teams with data-driven insights.
+              • Built 8+ dashboards and improved reporting efficiency by ~40%.<br/>
+              • Analyzed large-scale datasets (subscriptions, usage, paid ads) and supported product decisions.<br/>
+              • Delivered consistent KPI reporting with a focus on clarity, traceability, and data quality.
             </div>
           </div>
 
-          <!-- DBS -->
           <div class="timeline-item">
             <div>
-              <div class="timeline-role">Data Analyst</div>
-              <div class="timeline-company">Development Bank of Singapore (DBS) · India</div>
+              <div class="timeline-role">Data Analyst · Investment &amp; Trading Technology</div>
+              <div class="timeline-company">DBS Bank · India</div>
               <div class="timeline-meta">Jul 2022 – Mar 2024</div>
             </div>
             <div class="timeline-description">
-              • Built interactive <strong>Power BI</strong> dashboards consolidating data from multiple sources
-              for senior management KPIs and performance monitoring.<br />
-              • Developed <strong>SQL queries and stored procedures</strong> to extract and aggregate Murex
-              trading data for financial and regulatory reports.<br />
-              • Performed <strong>EDA and statistical analysis</strong> to identify patterns, trends, and
-              anomalies in financial transaction datasets.
+              • Built SQL workflows and reporting outputs for risk, regulatory, and management reporting.<br/>
+              • Improved trust in reports by resolving inconsistencies and strengthening audit readiness.
             </div>
           </div>
 
-          <!-- ADP -->
           <div class="timeline-item">
             <div>
               <div class="timeline-role">Software Engineer Intern</div>
@@ -1249,23 +956,7 @@
               <div class="timeline-meta">Jun 2021 – Oct 2021</div>
             </div>
             <div class="timeline-description">
-              • Built frontend components using <strong>React</strong> and contributed to application logic.<br />
-              • Developed and deployed backend components in <strong>Docker</strong> containers to support
-              reproducible testing and integration.<br />
-              • Collaborated with engineers on debugging, feature development, and deployment workflows.
-            </div>
-          </div>
-
-          <!-- Certifications -->
-          <div class="timeline-item">
-            <div>
-              <div class="timeline-role">Certifications</div>
-              <div class="timeline-company">Cloud &amp; AI</div>
-              <div class="timeline-meta">2024 – 2025</div>
-            </div>
-            <div class="timeline-description">
-              • AWS Cloud Practitioner Certification (Mar 2025).<br />
-              • Career Essentials in Generative AI by Microsoft &amp; LinkedIn (2024).
+              • Contributed to production systems; shipped structured stakeholder-ready outputs and presentations.
             </div>
           </div>
         </div>
@@ -1278,7 +969,7 @@
         <div class="section-header">
           <h2 class="section-title">Contact</h2>
           <p class="section-subtitle">
-            Best ways to reach me and see more of my work. Always open to discussing roles, projects, and collaborations.
+            If my profile fits your team, I’m happy to share code samples and walkthroughs.
           </p>
         </div>
 
@@ -1286,9 +977,7 @@
           <div class="contact-card">
             <div class="contact-line">
               <span class="contact-label">Email</span>
-              <a href="mailto:mihirdigavalli2014@gmail.com" class="contact-value">
-                mihirdigavalli2014@gmail.com
-              </a>
+              <a href="mailto:mihirdigavalli2014@gmail.com" class="contact-value">mihirdigavalli2014@gmail.com</a>
             </div>
             <div class="contact-line">
               <span class="contact-label">Phone</span>
@@ -1303,27 +992,26 @@
               <a href="https://linkedin.com/in/mihirdigavalli" target="_blank" rel="noopener noreferrer" class="social-pill">
                 LinkedIn
               </a>
-              <!-- TODO: add your real GitHub link -->
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
-                GitHub
+              <a href="https://mihir-ai.github.io/" target="_blank" rel="noopener noreferrer" class="social-pill">
+                Portfolio
               </a>
-              <!-- Optional: portfolio / BI gallery / Kaggle -->
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
-                BI / ML Portfolio
+              <a href="https://huggingface.co/spaces/sooraj190/DeepResearchagent" target="_blank" rel="noopener noreferrer" class="social-pill">
+                Hugging Face Demo
               </a>
+              <!-- Optional: add GitHub -->
+              <!-- <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a> -->
             </div>
           </div>
 
           <aside class="contact-side">
             <p>
-              I’m particularly interested in roles where I can combine <strong>data engineering</strong>,
-              <strong>analytics</strong>, and <strong>machine learning</strong> – ideally in cloud-based,
-              data-driven products.
+              I’m particularly interested in roles where I can combine <strong>analytics + engineering</strong> with
+              <strong>human-centered AI</strong> — building tools that teams can trust and actually use.
             </p>
             <br />
             <p>
-              If my profile looks relevant for your team, feel free to reach out via email or LinkedIn.
-              I’m happy to share more details, code samples, or walkthroughs of my projects.
+              Best way to reach me: email or LinkedIn. I can share a quick demo walkthrough for the
+              Deep Research Agent and the GenAI portfolio project.
             </p>
           </aside>
         </div>
